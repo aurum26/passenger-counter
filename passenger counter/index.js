@@ -1,5 +1,7 @@
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
+let saveNumber = document.getElementById("save-Number")
+let clearNumber = document.getElementById("clear-Number")
 let count = 0
 
 function increment() {
@@ -9,7 +11,17 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContent += countStr
+    saveNumber.textContent += countStr
     countEl.textContent = 0
     count = 0
+}
+
+function remove() {
+    count -= 1
+    countEl.textContent = count
+}
+
+function clearTextContent() {
+    saveNumber.textContent = "";
+    
 }

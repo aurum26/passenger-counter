@@ -48,3 +48,10 @@ button {
     font-weight: bold;
 }
 
+#remove {
+    background: darkred;
+}
+
+#clear-Number {
+    background: red;
+}
